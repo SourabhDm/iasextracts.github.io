@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<b:template xmlns:b="http://www.google.com/ns/blogger/2008" version="1.0" expr:skin="default">
+  <b:include data='blog' name='all-head-content'/>
+
+  <b:skin><![CDATA[
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff;
+      color: #212121;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2d3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #1c2b36;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    .main-content {
+      flex: 3;
+      padding: 20px;
+    }
+    .sidebar {
+      flex: 1;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    footer {
+      background: #2d3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      clear: both;
+    }
+    h1, h2, h3 {
+      color: #2d3e50;
+    }
+    a {
+      color: #0073aa;
+    }
+  ]]></b:skin>
+
+  <b:template-skin>
+    <b:defaultmarkups>
+      <b:meta name='viewport' content='width=device-width, initial-scale=1'/>
+      <b:meta name='description' content='Daily UPSC current affairs, GS notes, MCQs and PYQs. Simplified and updated.'/>
+      <b:meta name='robots' content='index, follow'/>
+      <b:meta name='author' content='IAS Extracts'/>
+    </b:defaultmarkups>
+  </b:template-skin>
+
+  <b:section id='header' class='header' showaddelement='no'/>
+  <b:section id='navbar' class='nav' showaddelement='yes'/>
+
+  <div class="container">
+    <b:section id='main-content' class='main-content' showaddelement='yes'/>
+    <b:section id='sidebar' class='sidebar' showaddelement='yes'/>
+  </div>
+
+  <b:section id='footer' class='footer' showaddelement='no'/>
+</b:template>
